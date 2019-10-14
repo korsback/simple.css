@@ -1,0 +1,27 @@
+@width: 100%;
+@space: 1%;
+@breakpoint: 800px;
+
+///SCREEN ADAPTIONS / SIZES
+@media only screen and (max-width: @breakpoint - 1) {
+  .col-1,
+  .col-2,
+  .col-3 {
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (min-width: @breakpoint) {
+  .col-1 { flex-basis: @width * 1 / 3 - @space }
+  .col-2 { flex-basis: @width * 2 / 3 - @space / 2}
+  .col-3 { flex-basis: @width }
+}
+
+.col-1,
+.col-2,
+.col-3 {
+  padding: 0.2rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}

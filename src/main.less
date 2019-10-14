@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
+
+@color-info: #50514f;
+@color-primary: #247ba0;
+@color-success: #4FC65E;
+@color-warning: #ffe066;
+@color-danger: #f25f5c;
+@light-text: #f2f2f2;
+
+//92e15a
+html,
+  body {
+  .container {
+    max-width: 960px; 
+    margin: 0 auto;
+  }
+  .container-max {
+    width: 100%;
+    margin: 0px;
+  }
+  hr {
+    border-top: 1px solid @color-info;
+    border-bottom: none
+  }
+  .code {
+    font-family: monospace;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+}
+@import "row.less";
+@import "col.less";
+@import "text.less";
+@import "element.less";
