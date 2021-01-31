@@ -3,35 +3,54 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
 }
-html .container,
-body .container {
+.container {
   max-width: 960px;
   margin: 0 auto;
 }
-html .container-max,
-body .container-max {
+.container-max {
   width: 100%;
   margin: 0px;
 }
-html hr,
-body hr {
+hr {
   border-top: 1px solid #50514f;
   border-bottom: none;
 }
-html .code,
-body .code {
+.code {
   font-family: monospace;
   font-size: 0.9rem;
   font-weight: 600;
+}
+.bg-primary {
+  background-color: #247ba0;
+  color: #f2f2f2;
+}
+.bg-info {
+  background-color: #50514f;
+  color: #f2f2f2;
+}
+.bg-success {
+  background-color: #4FC65E;
+  color: #f2f2f2;
+}
+.bg-warning {
+  background-color: #ffe066;
+}
+.bg-danger {
+  background-color: #f25f5c;
+}
+.hr {
+  width: 100%;
+  margin: 0.7rem 0;
+  color: #247ba0;
 }
 .row {
   width: 100%;
@@ -48,18 +67,19 @@ body .code {
 }
 @media only screen and (min-width: 800px) {
   .col-1 {
-    flex-basis: 32.33333333%;
+    width: 32.33333333%;
   }
   .col-2 {
-    flex-basis: 66.16666667%;
+    width: 66.16666667%;
   }
   .col-3 {
-    flex-basis: 100%;
+    width: 100%;
   }
 }
 .col-1,
 .col-2,
 .col-3 {
+  margin-top: 1%;
   padding: 0.2rem;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -142,6 +162,14 @@ h6 {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+}
+.grid-form .form-element.button {
+  margin-top: 0.4rem;
+}
+.grid-form label {
+  margin-top: 0.7rem;
+  margin-bottom: 0.4rem;
+  font-family: monospace;
 }
 .button {
   min-height: 2rem;

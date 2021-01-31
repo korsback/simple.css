@@ -7,9 +7,7 @@
 @color-danger: #f25f5c;
 @light-text: #f2f2f2;
 
-//92e15a
-html,
-  body {
+
   .container {
     max-width: 960px; 
     margin: 0 auto;
@@ -27,7 +25,31 @@ html,
     font-size: 0.9rem;
     font-weight: 600;
   }
-}
+
+  .bg-primary {
+    background-color: @color-primary;
+    color: @light-text;
+  }
+    .bg-info {
+    background-color: @color-info;
+    color: @light-text;
+  }
+    .bg-success {
+    background-color: @color-success;
+    color: @light-text;
+  }
+    .bg-warning {
+    background-color: @color-warning;
+  }
+    .bg-danger {
+    background-color: @color-danger;
+  }
+
+  .hr {
+    width: 100%;
+    margin: 0.7rem 0;
+    color: @color-primary;
+  }
 @import "row.less";
 @import "col.less";
 @import "text.less";
