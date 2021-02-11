@@ -1,51 +1,55 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
 
-@color-info: #50514f;
-@color-primary: #247ba0;
-@color-success: #4FC65E;
-@color-warning: #ffe066;
-@color-danger: #f25f5c;
+// To customize colors, change here:
+@color-info: #3173a0;
+@color-primary: #26547c;
+@color-success: #06d6a0;
+@color-warning: #ffd166;
+@color-danger: #ef476f;
 @light-text: #f2f2f2;
 
+@font-size: 0.9rem;
 
-  .container {
-    max-width: 960px; 
-    margin: 0 auto;
-  }
-  .container-max {
-    width: 100%;
-    margin: 0px;
-  }
-  hr {
-    border-top: 1px solid @color-info;
-    border-bottom: none;
-    width: 100%;
-    margin: 0.7rem 0
-  }
-  .code {
-    font-family: monospace;
-    font-size: 0.9rem;
-    font-weight: 600;
-  }
+.container {
+  max-width: 960px; 
+  margin: 0 auto;
+}
+.container-max {
+  width: 100%;
+  margin: 0px;
+}
+hr {
+  border-top: 1px solid @color-info;
+  border-bottom: none;
+  width: 100%;
+  margin: 0.7rem 0
+}
+.code {
+  font-family: monospace;
+  font-size: @font-size;
+  font-weight: 600;
+}
 
-  .bg-primary {
-    background-color: @color-primary;
-    color: @light-text;
-  }
-    .bg-info {
-    background-color: @color-info;
-    color: @light-text;
-  }
-    .bg-success {
-    background-color: @color-success;
-    color: @light-text;
-  }
-    .bg-warning {
-    background-color: @color-warning;
-  }
-    .bg-danger {
-    background-color: @color-danger;
-  }
+.bg-primary {
+  background-color: @color-primary;
+  color: @light-text;
+}
+  .bg-info {
+  background-color: @color-info;
+  color: @light-text;
+}
+  .bg-success {
+  background-color: @color-success;
+  color: @light-text;
+}
+  .bg-warning {
+  background-color: @color-warning;
+}
+  .bg-danger {
+  background-color: @color-danger;
+}
+
+//Import other files
 @import "row.less";
 @import "col.less";
 @import "text.less";
