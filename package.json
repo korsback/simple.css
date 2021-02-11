@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Simple css for prototyping and minified apps",
   "scripts": {
-    "dev": "gulp watch"
+    "dev": "gulp watch",
+    "build": "gulp build-less && gulp minify-css"
   },
   "keywords": [
     "css",

@@ -5,20 +5,20 @@ p,span,b,a {
   font-family: 'Open Sans', sans-serif;
 }
 p, span {
-  font-size: 0.9rem;
-  &.info {
+  font-size: @font-size;
+  &.tex-info {
     color: @color-info;
   }
-  &.primary {
+  &.text-primary {
     color: @color-primary;
   }
-  &.success {
+  &.text-success {
     color: @color-success;
   }
-  &.warning {
+  &.text-warning {
     color: @color-warning;
   }
-  &.danger {
+  &.text-danger {
     color: @color-danger;
   }
 }
@@ -43,5 +43,4 @@ h4,
 h5,
 h6 {
   margin: 0.4rem 0;
-  color: @color-info;
 }
